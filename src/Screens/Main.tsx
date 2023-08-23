@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { styles } from './MainPage.styles';
-import { Text, View } from 'react-native';
-import Title from '../components/Title';
+import { styles } from './Main.styles';
+import Title from '../components/Title/Title';
 import LinearGradient from 'react-native-linear-gradient';
+import RPS from '../components/RPS/RPS';
+import RulesBtn from '../components/Rules/RulesBtn';
 
 export default function Main() {
   return (
@@ -14,10 +15,9 @@ export default function Main() {
       colors={['#1f3756', '#141539']}
       style={styles.gradient}
     >
-      <View>
-        <Title />
-        <Text>asfd</Text>
-      </View>
+      <Title />
+      <RPS />
+      <RulesBtn />
     </LinearGradient>
   );
 }
