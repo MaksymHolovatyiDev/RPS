@@ -5,10 +5,15 @@ export interface RPSItemType {
 }
 
 export interface RPSDataType {
-  data: RPSItemType;
+    data: RPSItemType;
+    isSelected?: boolean;
 }
 
 export interface RulesTypes{
     isModalOpen: boolean;
     setIsModalOpen: (isOpen: boolean) => void;
+}
+
+export interface TitleTypes{
+    score: number;
 }

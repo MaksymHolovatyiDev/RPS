@@ -4,9 +4,10 @@ export const styles = StyleSheet.create({
   gradient: {
     flex: 1,
 
-    gap: 180,
+    justifyContent: 'space-between',
 
     paddingTop: 10 + (StatusBar.currentHeight || 0),
+    paddingBottom: 80,
     paddingHorizontal: 25,
   },
 });

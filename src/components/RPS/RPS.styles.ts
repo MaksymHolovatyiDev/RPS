@@ -1,23 +1,9 @@
 import { StyleSheet } from 'react-native';
-import { styleBase } from '../../stylesBase';
 
 export const styles = StyleSheet.create({
-  container: {
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
-  triangle: {
-    height: 250,
-    width: 250,
-  },
-
   item: {
     height: 120,
     width: 120,
-
-    position: 'absolute',
 
     justifyContent: 'center',
     alignItems: 'center',
