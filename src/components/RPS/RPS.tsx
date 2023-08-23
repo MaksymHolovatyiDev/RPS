@@ -1,11 +1,9 @@
+import { useRPS } from '../../Provider/Provider';
 import RPSDefault from '../RPSDefault/RPSDefault';
 import RPSPicked from '../RPSPicked/RPSPicked';
 
 export default function RPS() {
-  return (
-    <>
-      <RPSPicked />
-      {/* <RPSDefault /> */}
-    </>
-  );
+  const { picked } = useRPS();
+
+  return picked ? <RPSPicked /> : <RPSDefault />;
 }

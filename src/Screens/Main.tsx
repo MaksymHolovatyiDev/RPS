@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import { styles } from './Main.styles';
 import Title from '../components/Title/Title';
 import LinearGradient from 'react-native-linear-gradient';
@@ -7,8 +5,6 @@ import RPS from '../components/RPS/RPS';
 import RulesBtn from '../components/Rules/RulesBtn';
 
 export default function Main() {
-  const [score, setScore] = useState(0);
-
   return (
     <LinearGradient
       start={{ x: 0.0, y: 0.25 }}
@@ -17,7 +13,7 @@ export default function Main() {
       colors={['#1f3756', '#141539']}
       style={styles.gradient}
     >
-      <Title score={score} />
+      <Title />
       <RPS />
       <RulesBtn />
     </LinearGradient>

@@ -5,15 +5,18 @@ export interface RPSItemType {
 }
 
 export interface RPSDataType {
-    data: RPSItemType;
-    isSelected?: boolean;
+  data: RPSItemType;
+  isSelected?: boolean;
 }
 
-export interface RulesTypes{
-    isModalOpen: boolean;
-    setIsModalOpen: (isOpen: boolean) => void;
+export interface RulesTypes {
+  isModalOpen: boolean;
+  setIsModalOpen: (isOpen: boolean) => void;
 }
 
-export interface TitleTypes{
-    score: number;
+export interface ContextValue {
+  score: number;
+  setScore: (callback: (prevState: number) => number) => void;
+  picked: null | RPSItemType;
+  setPicked: (pick: RPSItemType | null) => void;
 }

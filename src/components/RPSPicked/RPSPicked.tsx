@@ -3,13 +3,16 @@ import RPSItem from '../RPS/RPSItem';
 import { items } from '../RPS/data';
 import { styles } from './RPSPicked.styled';
 import PlayAgain from '../PllayAgain/PlayAgain';
+import { useRPS } from '../../Provider/Provider';
 
 export default function RPSPicked() {
+  const { picked } = useRPS();
+
   return (
     <>
       <View style={styles.container}>
         <View style={styles.itemContainer}>
-          <RPSItem data={items[0]} isSelected={true} />
+          <RPSItem data={picked!} isSelected={true} />
           <Text style={styles.text}>You picked</Text>
         </View>
         <View style={styles.itemContainer}>

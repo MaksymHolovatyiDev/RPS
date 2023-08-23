@@ -3,9 +3,11 @@ import { SvgXml } from 'react-native-svg';
 
 import { logo } from '../../../assets/img/svg';
 import { styles } from './Title.styles';
-import { TitleTypes } from '../../Types';
+import { useRPS } from '../../Provider/Provider';
 
-export default function Title({ score }: TitleTypes) {
+export default function Title() {
+  const { score } = useRPS();
+
   return (
     <View style={styles.container}>
       <SvgXml xml={logo} style={styles.logo} />
