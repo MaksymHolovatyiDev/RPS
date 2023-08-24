@@ -13,7 +13,11 @@ export default function PlayAgain() {
 
   useEffect(() => {
     setTimeout(() => {
-      if (picked?.key === items[housePick ? housePick - 1 : 2].key) {
+      if (
+        picked?.key === items[housePick ? housePick - 1 : 4].key ||
+        picked?.key ===
+          items[housePick! + 2 > 4 ? housePick! - 3 : housePick! + 2].key
+      ) {
         setScore(prevState => ++prevState);
         setMessage('You win');
       } else if (picked?.key === items[housePick!].key) {

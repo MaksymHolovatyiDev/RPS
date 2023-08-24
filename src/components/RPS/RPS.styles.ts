@@ -27,16 +27,26 @@ export const styles = StyleSheet.create({
   },
 
   paper: {
-    top: -30,
-    left: 30,
+    top: 50,
+    right: 0,
   },
 
   scissors: {
     top: -30,
-    right: 30,
   },
 
   rock: {
-    bottom: 0,
+    bottom: -30,
+    right: 50,
+  },
+
+  lizard: {
+    bottom: -30,
+    left: 50,
+  },
+
+  spock: {
+    top: 50,
+    left: 0,
   },
 });

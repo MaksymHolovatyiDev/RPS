@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
@@ -10,5 +10,10 @@ export const styles = StyleSheet.create({
   triangle: {
     height: 250,
     width: 250,
+  },
+
+  pentagon: {
+    height: 280,
+    width: 280,
   },
 });

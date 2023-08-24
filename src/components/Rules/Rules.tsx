@@ -1,6 +1,6 @@
 import {Animated, Dimensions, Text, TouchableOpacity} from 'react-native';
 import {SvgXml} from 'react-native-svg';
-import {close, rules} from 'assets/img/svg';
+import {close, rulesBonus} from 'assets/img/svg';
 import {RulesTypes} from '@/Types';
 import {styles} from './Rules.styles';
 import {AnimatedFunction} from 'src/helpers/helpers';
@@ -10,7 +10,7 @@ export default function Rules({translateY}: RulesTypes) {
     <Animated.View
       style={{...styles.container, transform: [{translateY: translateY}]}}>
       <Text style={styles.rulesText}>Rules</Text>
-      <SvgXml xml={rules} style={styles.rulesImg} />
+      <SvgXml xml={rulesBonus} style={styles.rulesImg} />
       <TouchableOpacity
         style={styles.closeBtn}
         activeOpacity={0.8}

@@ -12,7 +12,7 @@ export default function RPSItem({data, isSelected}: RPSDataType) {
   const onButtonPress = () => {
     if (!isSelected) {
       AnimatedFunction(opacity, 0);
-      setHousePick(Math.floor(Math.random() * 3));
+      setHousePick(Math.floor(Math.random() * 5));
       setTimeout(() => setPicked(data), 500);
     }
   };

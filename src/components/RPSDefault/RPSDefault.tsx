@@ -1,7 +1,7 @@
 import {SvgXml} from 'react-native-svg';
 import {Animated} from 'react-native';
 
-import {bgTriangle} from 'assets/img/svg';
+import {bgPentagon} from 'assets/img/svg';
 import {items} from '@/components/RPS/data';
 import RPSItem from '@/components/RPS/RPSItem';
 import {styles} from './RPSDefault.styles';
@@ -12,7 +12,7 @@ export default function RPSDefault() {
 
   return (
     <Animated.View style={{...styles.container, opacity}}>
-      <SvgXml xml={bgTriangle} style={styles.triangle} />
+      <SvgXml xml={bgPentagon} style={styles.pentagon} />
 
       {items.map(el => (
         <RPSItem data={el} key={el.key} />
