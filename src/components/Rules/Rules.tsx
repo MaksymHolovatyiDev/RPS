@@ -1,8 +1,8 @@
 import { Text, TouchableOpacity, View } from 'react-native';
-import { styles } from './Rules.styles';
-import { RulesTypes } from '../../Types';
 import { SvgXml } from 'react-native-svg';
-import { close, rules } from '../../../assets/img/svg';
+import { close, rules } from 'assets/img/svg';
+import { RulesTypes } from '@/Types';
+import { styles } from './Rules.styles';
 
 export default function Rules({ isModalOpen, setIsModalOpen }: RulesTypes) {
   return (

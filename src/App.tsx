@@ -6,8 +6,8 @@
  */
 import { StatusBar } from 'react-native';
 
-import Main from './Screens/Main';
-import RPSProvider from './Provider/Provider';
+import Main from '@/Screens/Main';
+import RPSProvider from '@/Provider/Provider';
 
 function App(): JSX.Element {
   return (

@@ -2,6 +2,7 @@ export interface RPSItemType {
   colors: string[];
   style: { top?: number; left?: number; right?: number; bottom?: number };
   xml: string;
+  key: string;
 }
 
 export interface RPSDataType {
@@ -19,4 +20,6 @@ export interface ContextValue {
   setScore: (callback: (prevState: number) => number) => void;
   picked: null | RPSItemType;
   setPicked: (pick: RPSItemType | null) => void;
+  housePick: number | null;
+  setHousePick: (num: number) => void;
 }

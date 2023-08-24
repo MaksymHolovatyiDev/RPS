@@ -1,10 +1,10 @@
 import { SvgXml } from 'react-native-svg';
-
-import { bgTriangle } from '../../../assets/img/svg';
 import { View } from 'react-native';
+
+import { bgTriangle } from 'assets/img/svg';
+import { items } from '@/components/RPS/data';
+import RPSItem from '@/components/RPS/RPSItem';
 import { styles } from './RPSDefault.styles';
-import { items } from '../RPS/data';
-import RPSItem from '../RPS/RPSItem';
 
 export default function RPSDefault() {
   return (

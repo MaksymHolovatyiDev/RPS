@@ -1,12 +1,12 @@
 import { Text, View } from 'react-native';
-import RPSItem from '../RPS/RPSItem';
-import { items } from '../RPS/data';
+import RPSItem from '@/components/RPS/RPSItem';
+import { items } from '@/components/RPS/data';
+import PlayAgain from '@/components/PllayAgain/PlayAgain';
+import { useRPS } from '@/Provider/Provider';
 import { styles } from './RPSPicked.styled';
-import PlayAgain from '../PllayAgain/PlayAgain';
-import { useRPS } from '../../Provider/Provider';
 
 export default function RPSPicked() {
-  const { picked } = useRPS();
+  const { picked, housePick } = useRPS();
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function RPSPicked() {
         </View>
         <View style={styles.itemContainer}>
           <View style={styles.itemBase}>
-            <RPSItem data={items[1]} isSelected={true} />
+            <RPSItem data={items[housePick!]} isSelected={true} />
           </View>
           <Text style={styles.text}>The house picked</Text>
         </View>

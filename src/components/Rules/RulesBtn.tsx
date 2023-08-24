@@ -1,6 +1,7 @@
-import { Text, TouchableOpacity, View } from 'react-native';
-import { styles } from './Rules.styles';
 import { useState } from 'react';
+import { Text, TouchableOpacity, View } from 'react-native';
+
+import { styles } from './Rules.styles';
 import Rules from './Rules';
 
 export default function RulesBtn() {

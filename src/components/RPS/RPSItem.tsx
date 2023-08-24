@@ -1,15 +1,18 @@
 import LinearGradient from 'react-native-linear-gradient';
-import { styles } from './RPS.styles';
 import { TouchableOpacity, View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
-import { RPSDataType } from '../../Types';
-import { useRPS } from '../../Provider/Provider';
+import { RPSDataType } from '@/Types';
+import { useRPS } from '@/Provider/Provider';
+import { styles } from './RPS.styles';
 
 export default function RPSItem({ data, isSelected }: RPSDataType) {
-  const { setPicked } = useRPS();
+  const { setPicked, setHousePick } = useRPS();
 
   const onButtonPress = () => {
-    if (!isSelected) setPicked(data);
+    if (!isSelected) {
+      setPicked(data);
+      setHousePick(Math.floor(Math.random() * 3));
+    }
   };
 
   return (

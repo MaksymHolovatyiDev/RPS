@@ -1,8 +1,9 @@
-import { styles } from './Main.styles';
-import Title from '../components/Title/Title';
 import LinearGradient from 'react-native-linear-gradient';
-import RPS from '../components/RPS/RPS';
-import RulesBtn from '../components/Rules/RulesBtn';
+
+import Title from '@/components/Title/Title';
+import RPS from '@/components/RPS/RPS';
+import RulesBtn from '@/components/Rules/RulesBtn';
+import { styles } from './Main.styles';
 
 export default function Main() {
   return (

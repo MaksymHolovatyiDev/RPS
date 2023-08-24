@@ -1,9 +1,9 @@
 import { Text, View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 
-import { logo } from '../../../assets/img/svg';
+import { logo } from 'assets/img/svg';
+import { useRPS } from '@/Provider/Provider';
 import { styles } from './Title.styles';
-import { useRPS } from '../../Provider/Provider';
 
 export default function Title() {
   const { score } = useRPS();
