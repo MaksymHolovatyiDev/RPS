@@ -1,7 +1,4 @@
 export const styleBase = {
-  Mobile: '375px',
-  Desktop: '1366px',
-
   //Colors
   ScissorsGradient: ['hsl(39, 89%, 49%)', 'hsl(40, 84%, 53%)'],
   PaperGradient: ['hsl(230, 89%, 62%)', 'hsl(230, 89%, 65%)'],

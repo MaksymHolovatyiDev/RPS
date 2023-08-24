@@ -1,17 +1,19 @@
 import LinearGradient from 'react-native-linear-gradient';
-import { TouchableOpacity, View } from 'react-native';
-import { SvgXml } from 'react-native-svg';
-import { RPSDataType } from '@/Types';
-import { useRPS } from '@/Provider/Provider';
-import { styles } from './RPS.styles';
+import {TouchableOpacity, View} from 'react-native';
+import {SvgXml} from 'react-native-svg';
+import {RPSDataType} from '@/Types';
+import {useRPS} from '@/Provider/Provider';
+import {styles} from './RPS.styles';
+import {AnimatedFunction} from 'src/helpers/helpers';
 
-export default function RPSItem({ data, isSelected }: RPSDataType) {
-  const { setPicked, setHousePick } = useRPS();
+export default function RPSItem({data, isSelected}: RPSDataType) {
+  const {setPicked, setHousePick, opacity} = useRPS();
 
   const onButtonPress = () => {
     if (!isSelected) {
-      setPicked(data);
+      AnimatedFunction(opacity, 0);
       setHousePick(Math.floor(Math.random() * 3));
+      setTimeout(() => setPicked(data), 500);
     }
   };
 
@@ -24,15 +26,13 @@ export default function RPSItem({ data, isSelected }: RPSDataType) {
           ...styles.item,
           ...data.style,
         }
-      }
-    >
+      }>
       <LinearGradient
-        start={{ x: 0.0, y: 0.0 }}
-        end={{ x: 0.0, y: 0.5 }}
+        start={{x: 0.0, y: 0.0}}
+        end={{x: 0.0, y: 0.5}}
         locations={[0, 0.5]}
         colors={data.colors}
-        style={styles.item}
-      >
+        style={styles.item}>
         <View style={styles.itemBg}>
           <SvgXml xml={data.xml} style={styles.img} />
         </View>

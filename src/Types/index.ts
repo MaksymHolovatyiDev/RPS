@@ -1,6 +1,8 @@
+import {Animated} from 'react-native';
+
 export interface RPSItemType {
   colors: string[];
-  style: { top?: number; left?: number; right?: number; bottom?: number };
+  style: {top?: number; left?: number; right?: number; bottom?: number};
   xml: string;
   key: string;
 }
@@ -11,8 +13,16 @@ export interface RPSDataType {
 }
 
 export interface RulesTypes {
-  isModalOpen: boolean;
-  setIsModalOpen: (isOpen: boolean) => void;
+  translateY: Animated.Value;
+}
+
+export interface AnimatedFunc {
+  (
+    animatedRef: Animated.Value,
+    value: number,
+    timing?: number,
+    useNativeDriver?: boolean,
+  ): void;
 }
 
 export interface ContextValue {
@@ -22,4 +32,5 @@ export interface ContextValue {
   setPicked: (pick: RPSItemType | null) => void;
   housePick: number | null;
   setHousePick: (num: number) => void;
+  opacity: Animated.Value;
 }

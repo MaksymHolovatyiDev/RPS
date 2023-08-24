@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   item: {
@@ -17,6 +17,8 @@ export const styles = StyleSheet.create({
     padding: 20,
 
     borderRadius: 100 / 1,
+    borderWidth: 3,
+    borderColor: '#00000033',
   },
 
   img: {
