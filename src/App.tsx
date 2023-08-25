@@ -4,7 +4,7 @@
  *
  * @format
  */
-import { StatusBar } from 'react-native';
+import {StatusBar} from 'react-native';
 
 import Main from '@/Screens/Main';
 import RPSProvider from '@/Provider/Provider';

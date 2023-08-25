@@ -35,10 +35,16 @@ export const items = [
   },
 ];
 
+enum message {
+  Draw = 'Draw',
+  Win = 'You win',
+  Lose = 'You lose',
+}
+
 export const playerMessage = [
-  ['Draw', 'You win', 'You lose', 'You win', 'You lose'],
-  ['You lose', 'Draw', 'You win', 'You lose', 'You win'],
-  ['You win', 'You lose', 'Draw', 'You win', 'You lose'],
-  ['You lose', 'You win', 'You lose', 'Draw', 'You win'],
-  ['You win', 'You lose', 'You win', 'You lose', 'Draw'],
+  [message.Draw, message.Win, message.Lose, message.Win, message.Lose],
+  [message.Lose, message.Draw, message.Win, message.Lose, message.Win],
+  [message.Win, message.Lose, message.Draw, message.Win, message.Lose],
+  [message.Lose, message.Win, message.Lose, message.Draw, message.Win],
+  [message.Win, message.Lose, message.Win, message.Lose, message.Draw],
 ];
