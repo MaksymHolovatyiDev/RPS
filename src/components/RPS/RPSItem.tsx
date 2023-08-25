@@ -31,10 +31,10 @@ export default function RPSItem({data, isSelected}: RPSDataType) {
         start={{x: 0.0, y: 0.0}}
         end={{x: 0.0, y: 0.5}}
         locations={[0, 0.5]}
-        colors={data.colors}
+        colors={data?.colors}
         style={styles.item}>
         <View style={styles.itemBg}>
-          <SvgXml xml={data.xml} style={styles.img} />
+          <SvgXml xml={data?.xml} style={styles?.img} />
         </View>
       </LinearGradient>
     </TouchableOpacity>

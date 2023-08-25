@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Play again render Should renders correctly 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "gap": 10,
+      "justifyContent": "center",
+      "opacity": 0,
+      "position": "relative",
+      "transform": [
+        {
+          "translateY": 60,
+        },
+      ],
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#fff",
+        "fontFamily": "BarlowSemiCondensed-Bold",
+        "fontSize": 48,
+        "letterSpacing": 2,
+        "textTransform": "uppercase",
+      }
+    }
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 40,
+        "paddingVertical": 14,
+        "width": 240,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "hsl(229, 25%, 31%)",
+          "fontFamily": "BarlowSemiCondensed-SemiBold",
+          "fontSize": 16,
+          "letterSpacing": 2,
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Play again
+    </Text>
+  </View>
+</View>
+`;

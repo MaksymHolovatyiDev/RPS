@@ -1,7 +1,7 @@
 import {Animated, Text, TouchableOpacity} from 'react-native';
 import {styles} from './PlayAgain.styles';
 import {useRPS} from '@/Provider/Provider';
-import {items} from '@/components/RPS/data';
+import {items, playerMessage} from '@/components/RPS/data';
 import {useEffect, useRef, useState} from 'react';
 import {AnimatedFunction} from 'src/helpers/helpers';
 
@@ -13,18 +13,10 @@ export default function PlayAgain() {
 
   useEffect(() => {
     setTimeout(() => {
-      if (
-        picked?.key === items[housePick ? housePick - 1 : 4].key ||
-        picked?.key ===
-          items[housePick! + 2 > 4 ? housePick! - 3 : housePick! + 2].key
-      ) {
-        setScore(prevState => ++prevState);
-        setMessage('You win');
-      } else if (picked?.key === items[housePick!].key) {
-        setMessage('Draw');
-      } else {
-        setMessage('You lose');
-      }
+      const playerIdx = items.findIndex(el => picked?.key === el.key);
+      const resultMsg = playerMessage[playerIdx][housePick!];
+      setMessage(resultMsg);
+      if (resultMsg === 'You win') setScore(prevState => ++prevState);
       AnimatedFunction(translateY, 0, 300);
       AnimatedFunction(mainOpacity, 1, 300);
     }, 1200);

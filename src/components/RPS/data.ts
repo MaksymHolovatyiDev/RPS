@@ -34,3 +34,11 @@ export const items = [
     xml: spock,
   },
 ];
+
+export const playerMessage = [
+  ['Draw', 'You win', 'You lose', 'You win', 'You lose'],
+  ['You lose', 'Draw', 'You win', 'You lose', 'You win'],
+  ['You win', 'You lose', 'Draw', 'You win', 'You lose'],
+  ['You lose', 'You win', 'You lose', 'Draw', 'You win'],
+  ['You win', 'You lose', 'You win', 'You lose', 'Draw'],
+];

@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RPSPicked render Should renders correctly 1`] = `
+[
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <LinearGradient
+          end={
+            {
+              "x": 0,
+              "y": 0.5,
+            }
+          }
+          locations={
+            [
+              0,
+              0.5,
+            ]
+          }
+          start={
+            {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "borderRadius": 100,
+              "height": 120,
+              "justifyContent": "center",
+              "width": 120,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#fff",
+                "borderColor": "#00000033",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "padding": 20,
+              }
+            }
+          />
+        </LinearGradient>
+      </View>
+      <Text
+        style={
+          {
+            "fontFamily": "BarlowSemiCondensed-Bold",
+            "letterSpacing": 1,
+            "marginTop": 10,
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        You picked
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#14153988",
+            "borderRadius": 100,
+            "height": 120,
+            "width": 120,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "opacity": 0,
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <LinearGradient
+              end={
+                {
+                  "x": 0,
+                  "y": 0.5,
+                }
+              }
+              locations={
+                [
+                  0,
+                  0.5,
+                ]
+              }
+              start={
+                {
+                  "x": 0,
+                  "y": 0,
+                }
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderRadius": 100,
+                  "height": 120,
+                  "justifyContent": "center",
+                  "width": 120,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "backgroundColor": "#fff",
+                    "borderColor": "#00000033",
+                    "borderRadius": 100,
+                    "borderWidth": 3,
+                    "padding": 20,
+                  }
+                }
+              />
+            </LinearGradient>
+          </View>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "fontFamily": "BarlowSemiCondensed-Bold",
+            "letterSpacing": 1,
+            "marginTop": 10,
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        The house picked
+      </Text>
+    </View>
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "alignItems": "center",
+        "gap": 10,
+        "justifyContent": "center",
+        "opacity": 0,
+        "position": "relative",
+        "transform": [
+          {
+            "translateY": 60,
+          },
+        ],
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontFamily": "BarlowSemiCondensed-Bold",
+          "fontSize": 48,
+          "letterSpacing": 2,
+          "textTransform": "uppercase",
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderRadius": 8,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingHorizontal": 40,
+          "paddingVertical": 14,
+          "width": 240,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "hsl(229, 25%, 31%)",
+            "fontFamily": "BarlowSemiCondensed-SemiBold",
+            "fontSize": 16,
+            "letterSpacing": 2,
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        Play again
+      </Text>
+    </View>
+  </View>,
+]
+`;
