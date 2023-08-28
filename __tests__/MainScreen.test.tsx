@@ -9,6 +9,7 @@ describe('Main render', () => {
     const tree = render(<Main />).toJSON();
 
     expect(screen.getByText('Score')).toBeDefined();
+
     expect(tree).toMatchSnapshot();
   });
 });
