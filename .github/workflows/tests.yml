@@ -12,7 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and test
+      - name: Install
+        run: npm ci
+
+      - name: Test and push
         run: |
-          npm ci
-          npm run test
+          if npm test; then
+            echo "Passed!"
+          else
+            echo "Failed!"
+            exit 1
+          fi
