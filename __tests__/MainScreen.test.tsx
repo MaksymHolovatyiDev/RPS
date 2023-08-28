@@ -8,7 +8,7 @@ describe('Main render', () => {
     jest.useFakeTimers();
     const tree = render(<Main />).toJSON();
 
-    expect(screen.getByText('Score')).toBeDefined();
+    expect(screen.getByText('Scores')).toBeDefined();
     expect(tree).toMatchSnapshot();
   });
 });
